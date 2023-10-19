@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <title>
         Div and Order
     </title>
+    <link rel="stylesheet" href="cssbs.css">
+</head>
     <style>
         body {
             background-image: url(schooledit2.png);
@@ -12,7 +15,7 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
-        div {
+        .orderdiv {
             border: 5px outset yellow;
             background-color:rgba(0, 0, 0, 0.7);
             padding-top: 5px;
@@ -36,9 +39,26 @@
         }
     </style>
     <body>
+        <ul class="menuul">
+			<li class="menuli"><a href="index.html">Home</a></li>
+			<li class="menuli"><a href="profile.html">Profile</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Activities</button>
+				<div class="dropdown-content">
+					<a href="order.html">Order</a>
+					<a href="csspage1.html">Css</a>
+					<a href="classes&id.html">Class & id</a>
+					<a href="color.html">Color</a>
+					<a href="heading.html">Heading</a>
+					<a href="paragraph.html">Paragraph</a>
+					<a href="seatingarrangement.html">Seating arrangement</a>
+					<a href="textformatting.html">Text Formatting</a>
+					<a href="image.html">Image</a>
+			</div>
+		</ul>
         <h1 style="background-color: yellow;
         color:black; text-align: center;">div and order element</h1>
-        <div>
+        <div class="orderdiv">
             <h2>Most reliable cars of all time:</h2>
             <p>(ordered list)</p>
             <ol>
@@ -50,7 +70,7 @@
             </ol>
         </div>
         <br>
-        <div>
+        <div class="orderdiv">
             <h2>Youtubers that can't stop freebooting:</h2>
             <p>(unordered list)</p>
             <ul>
@@ -86,6 +106,5 @@
         </div>
         <br>
 		<br>
-		<a href="index.html" style="background-color:yellow;color:black;font-family:arial"><b>Back to Home</b></a>
     </body>
 </html>

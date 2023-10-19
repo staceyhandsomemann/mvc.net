@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Seating Arrangement</title>
+        <link rel="stylesheet" href="cssbs.css">
         <style>
             body {
+                background-image: url(schooledit2.png);
+			    background-repeat: no-repeat;
+			    background-attachment: fixed;
+			    background-size: cover;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .seatingdiv {
+            border: 5px outset yellow;
+            background-color:rgba(0, 0, 0, 0.7);
+            padding-top: 5px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-left: 20px;
+            }
+            h1 {
                 background-color: yellow;
+                color: black;
+                text-align: center
             }
             table, th, td {
-                border:3px solid black;
+                border:3px outset yellow;
                 border-collapse: collapse;
             }
             th, td {
@@ -21,19 +41,41 @@
                 text-align: center;
             }
             #alt {
-                text-align: center;
+                background-color: yellow;
+                color: black;
+                text-align: center
             }
             #male {
                 background-color: rgb(91, 255, 255);
+                color: black
             }
             #female {
                 background-color: rgb(255, 117, 255);
+                color:black
             }
         </style>
     </head>
     <body>
+        <ul class="menuul">
+			<li class="menuli"><a href="index.html">Home</a></li>
+			<li class="menuli"><a href="profile.html">Profile</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Activities</button>
+				<div class="dropdown-content">
+					<a href="order.html">Order</a>
+					<a href="csspage1.html">Css</a>
+					<a href="classes&id.html">Class & id</a>
+					<a href="color.html">Color</a>
+					<a href="heading.html">Heading</a>
+					<a href="paragraph.html">Paragraph</a>
+					<a href="seatingarrangement.html">Seating arrangement</a>
+					<a href="textformatting.html">Text Formatting</a>
+					<a href="image.html">Image</a>
+			</div>
+		</ul>
         <h1>Seating Arrangement Table</h1>
-
+        <div class="seatingdiv">
+        <br>
         <table id="board">
             <tr>
                 <th colspan="6">Blackboard</th>
@@ -100,7 +142,11 @@
             </tr>
         </table>
         <br>
+        </div>
+        <br>
         <h2 id="alt">alt, hallway at the middle:</h2>
+        <br>
+        <div class="seatingdiv">
         <br>
         <table id="board">
             <tr>
@@ -167,5 +213,7 @@
                 <td>N/A</td>
             </tr>
         </table>
+        <br>
+        </div>
     </body>
 </html>
