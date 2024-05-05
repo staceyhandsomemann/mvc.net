@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="operator.js"></script>
+</head>
+<style>
+    tr, th, td {
+        border: 2px outset rgb(0, 255, 170);
+        background-color: rgb(0, 255, 170);
+        width: 7%;
+        text-align: center
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>operation</th>
+            <th>answer</th>
+        </tr>
+        <tr>
+            <td><button onclick="addition()">addition</button></td>
+            <td><p id="addition">look at here</p></td>
+        </tr>
+        <tr>
+            <td><button onclick="subtraction()">subtraction</button></td>
+            <td><p id="subtraction">look at here</p></td>
+        </tr>
+        <tr>
+            <td><button onclick="multiplication()">multiplication</button></td>
+            <td><p id="multiplication">look at here</p></td>
+        </tr>
+        <tr>
+            <td><button onclick="division()">division</button></td>
+            <td><p id="division">look at here</p></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>operation</th>
+            <th>second value</th>
+            <th>comparison</th>
+            <th>answer</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="num1"><b>select number thing</b></label>
+                <select id="num1" name="numa">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+            <td>
+                <label for="num2"><b>select number thing</b></label>
+                <select id="num2" name="numb">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+            <td>
+                <label>is the first number</label>
+                <button onclick="equalsOperator()">equal</button>
+                <label>to the second number?</label>        
+            </td>
+            <td>
+                <form>
+                    <p id="equalsAns">answer here</p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <input type="range" id="num3" oninput="x.value=num3.value">
+                    <output id="x"></output>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <input type="range" id="num4" oninput="y.value=num4.value">
+                    <output id="y"></output>
+                </form>
+            </td>
+            <td>
+                <label>is the first number</label>
+                <button onclick="notEqual()">not equal</button>
+                <label>to the second number?</label>
+            </td>
+            <td>
+                <form>
+                    <p id="notEqualsAns">answer here</p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    first number
+                    <input type="number" id="num5">
+                </label>
+            </td>
+            <td>
+                <label>
+                    second number
+                    <input type="number" id="num6">
+                </label>
+            </td>
+            <td>
+                <label>is the first number</label>
+                <button onclick="lessThan()">less than</button>
+                <label>the second number?</label></td>
+            <td>
+                <form>
+                    <p id="lessThanAns">answer here</p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>10</label>
+                    <input type="radio" id="r1" value="10" name="num7">
+                <label>20</label>
+                    <input type="radio" id="r2" value="20" name="num7">
+                <label>30</label>
+                    <input type="radio" id="r3" value="30" name="num7">
+                <label>40</label>
+                    <input type="radio" id="r4" value="40" name="num7">
+                <label>50</label>
+                    <input type="radio" id="r5" value="50" name="num7">
+            </td>
+            <td>
+                <form>
+                <label>15</label>
+                    <input type="radio" id="r6" value="15" name="num8">
+                <label>25</label>
+                    <input type="radio" id="r7" value="25" name="num8">
+                <label>35</label>
+                    <input type="radio" id="r8" value="35" name="num8">
+                <label>45</label>
+                    <input type="radio" id="r9" value="45" name="num8">
+                <label>55</label>
+                    <input type="radio" id="r0" value="55" name="num8">
+                </form>
+            </td>
+            <td>
+                <label>is the first number</label>
+                <button onclick="greaterThan()">greater than</button>
+                <label>the second number?</label>
+            </td>
+            <td>
+                <form>
+                    <p id="greaterThanAns">answer here</p>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="addition()">addition</button>
+    <p id="addition">look at here</p>
+    <br>
+    <button onclick="subtraction()">subtraction</button>
+    <p id="subtraction">look at here</p>
+    <br>
+    <button onclick="multiplication()">multiplication</button>
+    <p id="multiplication">look at here</p>
+    <br>
+    <button onclick="division()">division</button>
+    <p id="division">look at here</p>
+    <br>
+    <button onclick="assignmentAddition()">assignmentAdditon</button>
+    <p id="assignedadd">look at here</p>
+    <br>
+    <button onclick="assignmentSubtraction()">assignmentSubtraction</button>
+    <p id="assignedsub">look at here</p>
+    <br>
+    <button onclick="assignmentMultiplication()">assignmentMultiplication</button>
+    <p id="assignedtim">look at here</p>
+    <br>
+    <button onclick="assignmentDivision()">assignmentDivision</button>
+    <p id="assigneddiv">look at here</p>
+    <br>
+</body>
+</html>

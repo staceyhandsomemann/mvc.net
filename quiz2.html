@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Grid Practice
+        </title>
+        <style>
+            html {
+              font-family: arial;
+            }
+            div{
+                border: 2px solid black;
+            }
+            .gridcon1{
+                display: grid;
+                grid-template-columns: auto 500px 500px;
+                gap: 10px;
+                margin: 5px;
+                padding: 5px;
+            }
+            .gridcon1>div{
+                font-size: 30px;
+                border: 3px green solid;
+                height: 80px;
+            }
+            .gridcon2{
+                display: grid;
+                grid-template-columns: auto auto ;
+                gap: 10px;
+                margin: 5px;
+                padding: 5px;
+            }
+            .gridcon2>div{
+                font-size: 30px;
+                border: 3px solid blue;
+                height: 120px;
+            }
+            .gridcon3{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
+                margin: 5px;
+                padding: 5px;
+                height:700px;
+                width: 60%;
+            }
+            .gridcon3>div{
+                font-size: 30px;
+                border: 3px solid yellow;
+                height: auto;
+            }
+            .gridcon3>.griditem10{
+             
+              padding-top: 100px;
+              
+            }
+            .gridcon4{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 10px;
+                margin: 5px;
+                padding: 5px;
+                height:700px;
+                width: 36.7%;
+                float: right;
+                margin-top: -720px;
+            }
+            .gridcon4>div{
+                font-size: 30px;
+                border: 3px solid red;
+             
+                
+            }
+            .gridcon5{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 10px;
+                margin: 5px;
+                padding: 5px;
+               
+            }
+            .gridcon5>div{
+                font-size: 30px;
+                border: 3px solid purple;
+                height: 100px;
+                grid-template-rows: 100px;
+            }
+            .gridcon5>.griditem15{
+                height: 50px;
+            }
+            .griditem1{
+                grid-column: 3;
+                grid-row: 1;
+            }
+            .griditem2{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .griditem3{
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .griditem4{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .griditem5{
+                grid-column: 2;
+                grid-row: 2;
+            }
+            .griditem6{
+                grid-column: 1;
+                grid-row: 3;
+            }
+            .griditem7{
+                grid-column: 2;
+                grid-row: 3;
+            }
+            .griditem8{
+                grid-column: 1;
+                grid-row: 4;
+            }
+            .griditem9{
+                grid-column: 2;
+                grid-row: 4;
+            }
+            .griditem10{
+                grid-column: 1 / span 2;
+                grid-row: 5;
+            }
+            .griditem11{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .griditem12{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .griditem13{
+                grid-column: 1;
+                grid-row: 3;
+            }
+            .griditem14{
+                grid-column: 1;
+                grid-row: 4;
+            }
+            .griditem15{
+                grid-column: 1 / span 3;
+                grid-row: 2;
+            }
+            .flip{
+                transform: scaleX(-1);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="gridcon1">
+            <div>Logo</div>
+            <div>
+                Search Bar
+            </div>
+            <div>
+                Navbar
+            </div>
+        </div>
+        <div class="gridcon2">
+            <div>Ads #1</div>
+            <div>Ads #2</div>
+        </div>
+        <div class="gridcon3">
+            <div class="griditem2">
+                Item 1
+            </div>
+            <div class="griditem3">
+                Item 2
+            </div>
+            <div class="griditem4">
+                Item 3
+            </div>
+            <div class="griditem5">
+                Item 4
+            </div>
+            <div class="griditem6">
+                Item 5
+            </div>
+            <div class="griditem7">
+                Item 6
+            </div>
+            <div class="griditem8">
+                Item 7
+            </div>
+            <div class="griditem9">
+                Item 8
+            </div>
+            <div class="griditem10" style="text-align:center">
+                Item 9
+            </div>
+        </div>
+        <div class="gridcon4">
+            <div class="griditem11">
+              Sale 1
+            </div>
+            <div class="griditem12">
+             Sale 2
+            </div>
+            <div class="griditem13">
+              Sale 3
+            </div>
+            <div class="griditem14">
+                Sale 4
+            </div>
+        </div>
+        <div class="gridcon5">
+            <div>
+                Info
+            </div>
+            <div>
+              Links
+            </div>
+            <div>
+                Follow
+            </div>
+            <div class="griditem15">
+                Copyright
+            </div>
+        </div>
+        
+    
+    </body>
+</html>

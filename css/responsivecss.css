@@ -1,11 +1,33 @@
 * {
   box-sizing: border-box;
+  }
+
+
+.snav {
+  width: 25%;
+  float: left;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 15px;
 }
 
+.main1 {
+  width: 75%;
+  float: left;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 15px;
+}
+
+.main2 {
+  width: 75%;
+  float: left;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 15px;
+  }
+
 .row::after {
-  content: "";
+  content: "" ;
   clear: both;
-  display: table;
+  display:table;
 }
 
 [class*="col-"] {
@@ -13,41 +35,29 @@
   padding: 15px;
 }
 
+
 html {
   font-family: "Lucida Sans", sans-serif;
+
 }
 
 .header {
-  background-color: rgb(100, 0, 100);
-  border: 3px outset purple;
-  color: white;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: rgba(255, 0, 187, 0.3);
-  border: 3px outset purple;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: rgb(133, 0, 77);
-  border: 3px outset rgb(133, 0, 77);
+  background-color: #b31312;
   color:white;
+  padding: 15px ;
+  text-align: center;
+  border: 3px solid rgb(0, 0, 0);
 }
+
+
+
+.snav li:hover {
+  background-color: #ccc090;
+}
+
 
 .aside {
-  background-color: rgb(100, 0, 100);
-  border: 3px outset purple;
+  background-color: #ea906c;
   padding: 15px;
   color: white;
   text-align: center;
@@ -56,21 +66,80 @@ html {
 }
 
 .footer {
-  background-color: rgb(100, 0, 100);
-  border: 3px outset purple;
+  background-color: #ea906c;
   color: white;
   text-align: center;
   font-size: 12px;
   padding: 15px;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
+
+
+ul.snav {
+  list-style-type:none ;
+  margin: 0%;
+  padding: 0%;
+  width: 25%;
+  background-color: #ea906c;
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
+
+ul.snav li a {
+  display: block;
+  color: #030524;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+ul.snav li a.active {
+  background-color: #ffab8a;
+  color: white;
+}
+
+ul.snav li a:hover:not(.active) {
+  background-color: #b31312;
+  color: white;
+}
+
+div.row {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height:1000px ;
+}
+
+
+
+/* for mobile phones: */
+[class*="col-"] {
+  width:100%
+}
+
+ /* for tablet: */
+@media only screen and (max-width: 768px) {
+
+
+  ul.snav {
+      width: 100%;
+      height: auto;
+      position: relative;
+   }
+   
+   
+   ul.snav li a {
+       float: left;
+       padding: 15px;
+   }
+   
+   div.row {
+       margin-left: 15%;
+     }
+  }
+/*fortabletthing*/
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -83,19 +152,25 @@ html {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+    
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
 }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
 }

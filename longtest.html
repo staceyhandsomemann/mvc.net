@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="longtest.js"></script>
+</head>
+<style>
+    body {
+        background-color: gainsboro;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2%
+    }
+    button {
+        background-color:rgb(42, 42, 42);
+        color:rgb(255, 255, 255)
+    }
+    #firstnumber, #secondnumber {
+        padding: 2%;
+        border: 3px outset rgb(92, 92, 92);
+        background-color: rgb(47, 47, 47);
+        color: white;
+    }
+    .oneops {
+        border: 3px outset rgb(22, 169, 0);
+        background-color: rgb(15, 115, 0);
+        color: white;
+    }
+    .twoops {
+        border: 3px outset rgb(239, 239, 0);
+        background-color: rgb(180, 180, 0);
+        color: rgb(0, 0, 0);
+    }
+    .threeops {
+        border: 3px outset rgb(169, 0, 0);
+        background-color: rgb(115, 0, 0);
+        color: white;
+    }
+    .answers {
+        border: 3px outset rgb(92, 92, 92);
+        background-color: rgb(47, 47, 47);
+        color: white;
+    }
+</style>
+<body>
+    <h1>Long Test</h1>
+    <h5>Joster Xymon P. Broqueza</h5>
+    <div id="firstnumber">
+        <label>
+            Enter the first number
+            <input type="number" id="num1">
+        </label>
+    </div>
+    <br>
+    <div id="secondnumber">
+        <label>
+            Enter the second number
+            <input type="number" id="num2">
+        </label>
+    </div>
+    <br>
+    <br>
+    <div class="oneops">
+        <p><strong>Simple Operations</strong></p>
+        <button onclick="additionOp()">Addition</button>
+        <button onclick="subtractionOp()">Subtraction</button>
+        <button onclick="multiplicationOp()">Multiplication</button>
+        <button onclick="divisionOp()">Division</button>
+    </div>
+    <br>
+    <div class="twoops">
+        <p><strong>Assigned Operations</strong></p>
+        <button onclick="assignedAdd()">Assignment Addition</button>
+        <button onclick="assignedSub()">Assignment Subtraction</button>
+        <button onclick="assignedMul()">Assignment Multiplication</button>
+        <button onclick="assignedDiv()">Assignment Division</button>
+    </div>
+    <br>
+    <div class="threeops">
+        <p><strong>Comparison Operations</strong></p>
+        <button onclick="equalsOp()">Is it equal to?</button>
+        <button onclick="notequalsOp()">Is it not equal to?</button>
+        <button onclick="lessThan()">Is it less than?</button>
+        <button onclick="greaterThan()">Is it greater than?</button>
+    </div>
+    <br>
+    <br>
+    <div class="answers">
+        <p><strong>Answer will appear here.</strong></p>
+        <form>
+            <p id="answer">___</p>
+        </form>
+    </div>
+</body>
+</html>
